@@ -6,8 +6,11 @@
 using namespace std;
 
 
+
 int main(int argc, char *argv[])
 {
+    string temp;
+    string humi;
 
     QApplication a(argc, argv);
     MainWindow w;
@@ -24,7 +27,6 @@ int main(int argc, char *argv[])
     port.open(QIODevice::ReadWrite);
 
 
-
     for(int i=1;i<10;i++){
 
     if(!port.waitForReadyRead(-1)){ //block until new data arrives
@@ -33,7 +35,19 @@ int main(int argc, char *argv[])
     else{
         QByteArray datas;
         datas = port.readAll();
-        qDebug() << datas;
+
+        if (datas.at(0) == '#'){
+            temp.assign(datas);
+            QString temp = datas;
+            qDebug() << temp;
+        }
+        else if (datas.at(0) == '&'){
+            humi.assign(datas);
+            QString humi = datas;
+            qDebug() << humi;
+        }
+
+
     }
     }
 
