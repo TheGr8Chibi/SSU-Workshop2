@@ -14,43 +14,56 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="conLabel">
     <property name="geometry">
      <rect>
       <x>30</x>
       <y>40</y>
-      <width>181</width>
+      <width>311</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>Penis borger</string>
+     <string>Connected</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="humLabel">
     <property name="geometry">
      <rect>
       <x>30</x>
       <y>70</y>
-      <width>201</width>
+      <width>321</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>Penis borger men gay</string>
+     <string>Humidity</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>140</y>
+      <x>30</x>
+      <y>150</y>
       <width>80</width>
       <height>20</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tempLabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>301</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Temperature</string>
     </property>
    </widget>
   </widget>
@@ -60,7 +73,7 @@
      <x>0</x>
      <y>0</y>
      <width>400</width>
-     <height>20</height>
+     <height>29</height>
     </rect>
    </property>
   </widget>
